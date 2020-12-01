@@ -1,0 +1,6 @@
+[manager]
+swarm-m
+
+[worker]
+swarm-w
+swarm-w2
