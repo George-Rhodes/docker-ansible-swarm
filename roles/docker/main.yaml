@@ -29,6 +29,17 @@
     state: latest
     update_cache: true
 
+- name: Create docker group
+  group:
+    name: "docker"
+    state: present
+
+- name: Adding user  to docker group
+  user:
+    name: "george_rhodes"
+    groups: "docker"
+    append: "yes"
+
 - name: Install Python3
   apt:
     name: python3
