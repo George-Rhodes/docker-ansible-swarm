@@ -1,6 +1,16 @@
 [manager]
 swarm-m
 
+[manager:vars]
+ansible_user=george_rhodes
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+ansible_python_interpreter=/usr/bin/python3
+
 [worker]
 swarm-w
 swarm-w2
+
+[worker:vars]
+ansible_user=george_rhodes
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+ansible_python_interpreter=/usr/bin/python3
