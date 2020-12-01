@@ -1,6 +1,6 @@
 - name: Install Requirements for Docker
   apt:
-    pkg: 
+    pkg:
     - apt-transport-https
     - ca-certificates
     - curl
