@@ -17,7 +17,7 @@
   apt_key:
     url: https://download.docker.com/linux/ubuntu/gpg
     state: present
-  tags: doccker
+  tags: docker
 
 - name: Add docker packages to repo
   apt_repository:
